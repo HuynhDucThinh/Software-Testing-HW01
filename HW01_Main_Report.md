@@ -1614,17 +1614,97 @@ Thiết bị được lựa chọn cho Yêu cầu 3 là một **quạt bàn Senk
 
 AI được sử dụng để tạo bản nháp 15 test case đầu tiên. Sau khi nhận kết quả, sinh viên đánh giá tính khả thi, loại bỏ các giả định không phù hợp với thiết bị thật và yêu cầu AI chỉnh lại những test case chưa an toàn hoặc chưa có giá trị kiểm thử rõ ràng.
 
-| Trường thông tin  | Nội dung                                                                                           |
-| ----------------- | -------------------------------------------------------------------------------------------------- |
-| Công cụ/model AI  | `[CẦN ĐIỀN: tên công cụ và model đã sử dụng]`                                                      |
-| Thời điểm sử dụng | `[CẦN ĐIỀN: ngày, giờ]`                                                                            |
-| Mục đích          | Sinh đúng 15 test case cho quạt bàn Senko 220V có ba mức gió, nút nhấn và chức năng quay trái-phải |
-| Điều kiện đặt ra  | Test được tại nhà, không dùng dụng cụ chuyên dụng và không thực hiện thao tác nguy hiểm            |
-| File log AI       | `[CẦN ĐIỀN: tên hoặc đường dẫn file log AI]`                                                       |
+| Trường thông tin  | Nội dung                                                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Công cụ/model AI  | ChatGPT-5.6 Sol                                                                                                                    |
+| Thời điểm sử dụng | 25/09/2026                                                                                                                         |
+| Mục đích          | Sinh đúng 15 test case cho quạt bàn Senko sử dụng điện xoay chiều 220V, có ba mức gió, nút nhấn cơ học và chức năng quay trái-phải |
+| Điều kiện đặt ra  | Test được tại phòng trọ                                                                                                            |
 
 #### Prompt đã sử dụng
 
-> `[CẦN DÁN NGUYÊN VĂN PROMPT ĐÃ GỬI CHO AI]`
+> Bạn là kỹ sư QA/QC đang thiết kế test case cho một sản phẩm vật lý thực tế.
+>
+> **THÔNG TIN SẢN PHẨM**
+>
+> - Sản phẩm: Quạt bàn gia dụng
+> - Thương hiệu: Senko
+> - Năm sản xuất hoặc năm mua: 2023
+> - Nguồn điện: Điện xoay chiều 220V
+> - Số mức gió: 3
+> - Cơ chế điều khiển tốc độ: [nút nhấn]
+> - Chức năng quay trái-phải: có
+> - Cách bật chức năng quay: [nút nhấn phía sau]
+> - Có thể điều chỉnh góc quạt lên-xuống: không
+> - Chức năng hẹn giờ: không
+> - Remote control: không
+> - Đèn báo hoặc màn hình: không
+> - Các chức năng khác: Không có
+> - Dụng cụ kiểm thử có sẵn: đồng hồ bấm giờ, thước dây và giấy mỏng để quan sát luồng gió.
+> - Môi trường kiểm thử: phòng ở sinh viên, mặt bàn bằng phẳng, sử dụng nguồn điện gia dụng bình thường.
+>
+> Hãy tạo chính xác 15 test case để kiểm thử chiếc quạt bàn cụ thể này.
+>
+> **PHẠM VI KIỂM THỬ**
+>
+> Bộ test case cần bao phủ hợp lý các nhóm sau:
+>
+> 1. Bật và tắt quạt.
+> 2. Kiểm tra từng mức tốc độ gió.
+> 3. Chuyển đổi giữa các mức tốc độ.
+> 4. Chức năng quay trái-phải nếu quạt có hỗ trợ.
+> 5. Điều chỉnh hướng gió lên-xuống nếu có hỗ trợ.
+> 6. Độ ổn định của quạt trên mặt bàn.
+> 7. Nút bấm hoặc núm điều khiển.
+> 8. Tiếng ồn và rung động bất thường có thể quan sát được.
+> 9. Dây điện, phích cắm và trạng thái hoạt động bình thường.
+> 10. Khởi động lại sau khi tắt.
+> 11. Phản ứng sau khi mất điện và được cấp điện trở lại.
+> 12. Hoạt động liên tục trong thời gian hợp lý.
+> 13. Thao tác không hợp lệ nhưng an toàn.
+> 14. Tính nhất quán giữa trạng thái điều khiển và hoạt động thực tế.
+> 15. Khả năng quan sát và sử dụng của người dùng.
+>
+> **YÊU CẦU AN TOÀN**
+>
+> - Chỉ tạo test case có thể thực hiện an toàn tại nhà.
+> - Không yêu cầu tháo quạt hoặc mở lồng bảo vệ.
+> - Không chạm tay hoặc đưa vật thể vào cánh quạt.
+> - Không chặn cánh quạt hoặc motor khi quạt đang chạy.
+> - Không thử nghiệm với nước, chất lỏng, lửa hoặc môi trường ẩm ướt.
+> - Không thử quá áp, đấu nối điện hoặc làm hỏng dây điện.
+> - Không thực hiện thử nghiệm có nguy cơ điện giật, cháy, hỏng thiết bị hoặc mất bảo hành.
+> - Không để quạt hoạt động qua đêm hoặc không có người giám sát.
+> - Không giả định quạt có chức năng không được liệt kê trong phần thông tin sản phẩm.
+>
+> **ĐỊNH DẠNG MỖI TEST CASE**
+>
+> Mỗi test case phải có đầy đủ:
+>
+> 1. Test Case ID
+> 2. Test Case Title
+> 3. Objective
+> 4. Preconditions
+> 5. Input
+> 6. Steps
+> 7. Expected Result
+> 8. Actual Result
+> 9. Verdict
+>
+> **QUY TẮC VIẾT**
+>
+> - Viết hoàn toàn bằng tiếng Việt.
+> - Đánh số từ TC01 đến TC15.
+> - Mỗi test case chỉ tập trung vào một mục tiêu kiểm thử chính.
+> - Các bước phải cụ thể, có thứ tự và sinh viên có thể thực hiện được.
+> - Expected Result phải rõ ràng, quan sát hoặc đo được bằng dụng cụ được liệt kê.
+> - Không dùng các nhận xét mơ hồ như “quạt hoạt động tốt” mà không nêu dấu hiệu quan sát.
+> - Không tự đặt tiêu chuẩn kỹ thuật về tốc độ gió, độ ồn hoặc nhiệt độ nếu không có tài liệu nhà sản xuất.
+> - Không tuyên bố rằng test case đã được thực thi.
+> - Điền “Chưa thực thi” vào Actual Result.
+> - Điền “Not Executed” vào Verdict.
+> - Trình bày từng test case thành một mục riêng, không gộp toàn bộ nội dung vào một bảng quá rộng.
+> - Cuối câu trả lời, tạo một bảng tóm tắt gồm Test Case ID, tên test case và nhóm kiểm thử.
 
 ![Prompt yêu cầu AI tạo 15 test case](evidence/ai_screenshots/R3_test_case_prompt.png)
 
