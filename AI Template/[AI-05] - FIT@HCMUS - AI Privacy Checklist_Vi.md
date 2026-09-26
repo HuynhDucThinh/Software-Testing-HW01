@@ -18,35 +18,35 @@ Biểu mẫu được điều chỉnh từ tài liệu của Med Kharbach, PhD (
 | Môn học             | CS423 / CSC13003 - Kiểm thử phần mềm |
 | Giảng viên          | Hồ Tuấn Thanh                        |
 | Ngày xác nhận       | 26/09/2026                           |
-| Chữ ký              | Huỳnh Đức Thịnh (xác nhận điện tử)   |
+| Chữ ký              | Huỳnh Đức Thịnh                      |
 
 ## 1. Trước khi sử dụng AI
 
-- [x] Tôi đã xác nhận nhóm sử dụng AI được áp dụng cho bài tập này.
-- [x] Tôi đã khai báo các công cụ AI sẽ sử dụng trong nhật ký prompt.
-- [x] Tôi đã đọc Thỏa thuận sử dụng AI của môn học.
-- [x] Tôi hiểu rõ những sản phẩm hoặc tài liệu bắt buộc không được tạo bằng AI.
+- [x] Em đã xác nhận nhóm sử dụng AI được áp dụng cho bài tập này.
+- [x] Em đã khai báo các công cụ AI sẽ sử dụng trong nhật ký prompt.
+- [x] Em đã đọc Thỏa thuận sử dụng AI của môn học.
+- [x] Em hiểu rõ những sản phẩm hoặc tài liệu bắt buộc không được tạo bằng AI.
 
 ## 2. Trong khi sử dụng AI
 
-- [x] Tôi không nhập dữ liệu cá nhân của bạn học, khách hàng hoặc bệnh nhân vào công cụ AI.
-- [x] Tôi không sao chép toàn bộ tài liệu đọc có bản quyền vào công cụ AI.
-- [x] Tôi không cung cấp mã nguồn độc quyền của đơn vị tuyển dụng hoặc mã nguồn bị hạn chế bởi giấy phép nguồn mở vào công cụ AI.
-- [x] Tôi đã lưu từng prompt và câu trả lời của AI vào `prompt_log.md`, kèm theo thời gian sử dụng.
+- [x] Em không nhập dữ liệu cá nhân của bạn học, khách hàng hoặc bệnh nhân vào công cụ AI.
+- [x] Em không sao chép toàn bộ tài liệu đọc có bản quyền vào công cụ AI.
+- [x] Em không cung cấp mã nguồn độc quyền của đơn vị tuyển dụng hoặc mã nguồn bị hạn chế bởi giấy phép nguồn mở vào công cụ AI.
+- [x] Em đã lưu từng prompt và câu trả lời của AI vào `prompt_log.md`, kèm theo thời gian sử dụng.
 
 ## 3. Trước khi nộp bài
 
-- [x] Tất cả sản phẩm do AI tạo hoặc có AI hỗ trợ đều được đánh dấu trong AI Audit Report.
-- [x] Tôi đã kiểm tra tất cả trích dẫn do AI cung cấp và xác nhận các nguồn thực sự tồn tại.
-- [x] Tất cả mã nguồn do AI tạo đã được thực thi và kiểm thử.
-- [x] Tôi đã đưa phần nhận xét, đánh giá việc sử dụng AI dài từ 200 đến 300 từ vào báo cáo.
-- [x] Tôi đã đặt đoạn tuyên bố bắt buộc về việc sử dụng AI ở cuối báo cáo.
-- [x] Tôi đã đính kèm Phiếu khai báo sử dụng AI.
-- [x] Tôi đã sẵn sàng tham gia phần vấn đáp ngẫu nhiên kéo dài từ 5 đến 7 phút trong tuần sau khi nộp bài.
+- [x] Tất cả nội dung em thực hiện có sử dụng AI hỗ trợ đều được đánh dấu trong AI Audit Report.
+- [x] Em đã kiểm tra tất cả trích dẫn do AI cung cấp và xác nhận các nguồn thực sự tồn tại.
+- [x] Không áp dụng: Bài tập này không sử dụng mã nguồn do AI tạo.
+- [x] Em đã đưa phần nhận xét, đánh giá việc sử dụng AI dài từ 200 đến 300 từ vào báo cáo.
+- [x] Em đã đặt đoạn tuyên bố bắt buộc về việc sử dụng AI ở cuối báo cáo.
+- [x] Em đã đính kèm Phiếu khai báo sử dụng AI.
+- [x] Em đã sẵn sàng tham gia phần vấn đáp ngẫu nhiên kéo dài từ 5 đến 7 phút trong tuần sau khi nộp bài.
 
 ## 4. Tuyên bố cuối cùng
 
-Tôi chịu trách nhiệm cuối cùng về tính chính xác, tính nguyên bản và tính trung thực của bài nộp này. Tôi hiểu rằng mọi hành vi sử dụng AI nhưng không khai báo đều có thể bị xem là vi phạm quy định về trung thực học thuật.
+Em chịu trách nhiệm cuối cùng về tính chính xác, tính nguyên bản và tính trung thực của bài nộp này. Em hiểu rằng mọi hành vi sử dụng AI nhưng không khai báo đều có thể bị xem là vi phạm quy định về trung thực học thuật.
 
 ## 5. Xác nhận của sinh viên
 
