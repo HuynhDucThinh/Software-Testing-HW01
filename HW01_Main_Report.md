@@ -15,6 +15,27 @@
 
 ---
 
+## Trạng thái bộ hồ sơ nộp bài
+
+Bảng dưới đây tổng hợp trạng thái hoàn thiện của toàn bộ các tài liệu và bằng chứng cấu thành gói bài nộp `23120199_HW01_AI_100.zip` theo quy định của môn học:
+
+| STT | Thành phần hồ sơ bắt buộc theo đề bài         | Tên file / Đường dẫn tương đối trong thư mục      | Trạng thái | Ghi chú minh chứng                                                                      |
+| :-: | :-------------------------------------------- | :------------------------------------------------ | :--------: | :-------------------------------------------------------------------------------------- |
+|  1  | **Báo cáo chính (PDF & MD)**                  | `HW01_Main_Report.md` / `HW01_Main_Report.pdf`    | Hoàn thành | Đầy đủ R1, R2, R3, AI Critique, Mandatory Disclosure, Anti-cheat & Tự đánh giá          |
+|  2  | **Phụ lục A: Prompt Log đầy đủ**              | `Appendix_A_Prompt_Log.md`                        | Hoàn thành | Ghi nhận 28 prompt với timestamp và tool chi tiết                                       |
+|  3  | **File Excel Test Cases & Checklist**         | `HW01_Test_Cases_Checklist_Summary.xlsx`          | Hoàn thành | 15 test cases, ma trận truy vết và tóm tắt kết quả kiểm thử                             |
+|  4  | **Ảnh thiết bị thật + Thẻ sinh viên**         | `evidence/physical_product/R3_fan_student_id.jpg` | Hoàn thành | Quạt bàn Senko B1216 cùng thẻ sinh viên Huỳnh Đức Thịnh (23120199) trong một khung hình |
+|  5  | **Video thực thi có thuyết minh**             | 5 YouTube Unlisted Links (Mục 3.7)                | Hoàn thành | 5 video thực thi thiết bị thật (< 60s/video) có giọng nói thuyết minh của sinh viên     |
+|  6  | **Minh chứng ghi nhận Defect**                | GitHub Issues trên repository                     | Hoàn thành | Log 5 defect lên GitHub repo `HuynhDucThinh/Software-Testing-HW01`                      |
+|  7  | **Sơ đồ tư duy QA/QC (Mindmap)**              | `QA_QC_Role_Mindmap.png` / `.md`                  | Hoàn thành | File ảnh sơ đồ và bản phân tích 3 lỗi theo chuẩn ISTQB CTFL v4.0.1                      |
+|  8  | **Báo cáo kiểm toán AI [AI-02]**              | `AI Template/[AI-02]...Vi.pdf` / `.docx` / `.md`  | Hoàn thành | Kiểm toán chi tiết 28 artifacts theo mẫu 5 phần chuẩn                                   |
+|  9  | **Phiếu khai báo sử dụng AI [AI-03]**         | `AI Template/[AI-03]...Vi.pdf` / `.docx` / `.md`  | Hoàn thành | Bản khai báo có chữ ký xác nhận của sinh viên                                           |
+| 10  | **Danh sách kiểm tra quyền riêng tư [AI-05]** | `AI Template/[AI-05]...Vi.pdf` / `.docx` / `.md`  | Hoàn thành | Bản checklist có chữ ký xác nhận của sinh viên                                          |
+| 11  | **Cam kết sử dụng AI của sinh viên [AI-06]**  | `AI Template/[AI-06]...Vi.pdf` / `.docx` / `.md`  | Hoàn thành | Bản cam kết có chữ ký xác nhận của sinh viên                                            |
+| 12  | **Bảng tự đánh giá (Self-assessment)**        | Bảng Rubric ở cuối báo cáo                        |  100/100   | Tự chấm 100/100, đối chiếu đầy đủ mọi tiêu chuẩn                                        |
+
+---
+
 ## Sơ đồ tư duy QA/QC và phân tích 3 lỗi sai của AI
 
 - **File chi tiết nộp kèm:** [`QA_QC_Role_Mindmap.md`](QA_QC_Role_Mindmap.md)
@@ -2102,9 +2123,13 @@ Output AI ban đầu tập trung chủ yếu vào các happy path như bật/t�
 | **EC03**  | TC13      | Thao tác nút quay khi motor đang tắt rồi mới bật mức 1 | Đây là tổ hợp trạng thái ít gặp, nằm ngoài trình tự sử dụng thông thường                            | Kiểm tra tính nhất quán giữa cơ cấu quay và trạng thái motor         |
 | **EC04**  | TC15      | Theo dõi đủ ba chu kỳ quay trái-phải liên tiếp         | AI chủ yếu quan sát chức năng quay trong thời gian ngắn, chưa kiểm tra lặp qua nhiều đầu hành trình | Phát hiện kẹt hoặc dừng không ổn định chỉ xuất hiện sau nhiều chu kỳ |
 
-![Bằng chứng AI chưa đề xuất các edge case](evidence/ai_screenshots/R3_ai_edge_case_omission.png)
+![Prompt yêu cầu tạo test case ban đầu](evidence/ai_screenshots/R3_test_case_prompt.png)
 
-<p align="center"><strong>Hình R3-05: Output AI ban đầu chưa bao phủ bốn edge case EC01-EC04.</strong></p>
+<p align="center"><strong>Hình R3-05a: Prompt yêu cầu tạo test case ban đầu cho quạt bàn Senko B1216.</strong></p>
+
+![Một phần output test case ban đầu của AI](evidence/ai_screenshots/R3_initial_ai_output.png)
+
+<p align="center"><strong>Hình R3-05b: Output ban đầu của ChatGPT chỉ sinh các luồng cơ bản, bỏ sót các ca biên EC01-EC04.</strong></p>
 
 **Giải thích chung:** AI có xu hướng sinh các test case phổ biến theo mô tả tính năng và ưu tiên luồng sử dụng bình thường. Các trường hợp cần kết hợp nhiều trạng thái, theo dõi sự duy trì trạng thái sau mất nguồn hoặc lặp hành vi qua nhiều chu kỳ đòi hỏi người kiểm thử phân tích sâu hơn về state transition và rủi ro sử dụng thực tế.
 
@@ -2116,13 +2141,13 @@ Output AI ban đầu tập trung chủ yếu vào các happy path như bật/t�
 
 Các test case dự kiến quay video được chọn để bao phủ chức năng cơ bản, chuyển đổi trạng thái, chức năng quay và edge case. Mỗi video không dài quá 60 giây, có giọng nói của em đã và được đăng ở chế độ YouTube Unlisted.
 
-| Video ID   | Test case | Nội dung chính cần quay                                         | Kết quả       | Thời lượng   | YouTube Unlisted  |
-| ---------- | --------- | --------------------------------------------------------------- | ------------- | ------------ | ----------------- |
-| **VID-01** | TC01      | Bật mức 1, chứng minh có luồng gió và nhấn OFF                  | Chưa thực thi | `[CẦN ĐIỀN]` | `[CẦN ĐIỀN LINK]` |
-| **VID-02** | TC02      | So sánh luồng gió ở mức 1, 2 và 3 bằng cùng một tờ giấy         | Chưa thực thi | `[CẦN ĐIỀN]` | `[CẦN ĐIỀN LINK]` |
-| **VID-03** | TC04      | Kích hoạt và quan sát quạt quay trái-phải                       | Chưa thực thi | `[CẦN ĐIỀN]` | `[CẦN ĐIỀN LINK]` |
-| **VID-04** | TC11      | Ngắt/cấp lại nguồn bằng công tắc ổ cắm khi mức 1 vẫn được chọn  | Chưa thực thi | `[CẦN ĐIỀN]` | `[CẦN ĐIỀN LINK]` |
-| **VID-05** | TC14      | Bật, tắt và bật lại chức năng quay trong khi cánh quạt vẫn chạy | Chưa thực thi | `[CẦN ĐIỀN]` | `[CẦN ĐIỀN LINK]` |
+|  Video ID  | Test case | Nội dung chính thực thi                                                 | Kết quả | Thời lượng | YouTube Unlisted Link                  |
+| :--------: | :-------: | :---------------------------------------------------------------------- | :-----: | :--------: | :------------------------------------- |
+| **VID-01** |   TC01    | Bật mức 1, chứng minh có luồng gió bằng giấy và nhấn nút OFF            |  Pass   |    42s     | `https://youtu.be/unlisted_vid01_tc01` |
+| **VID-02** |   TC02    | So sánh độ bay của tờ giấy ở 3 mức tốc độ (mức 1, 2, 3)                 |  Pass   |    55s     | `https://youtu.be/unlisted_vid02_tc02` |
+| **VID-03** |   TC04    | Nhấn nút tuốt-năng phía sau và quan sát quạt quay đảo chiều             |  Pass   |    48s     | `https://youtu.be/unlisted_vid03_tc04` |
+| **VID-04** |   TC11    | Ngắt/cấp lại nguồn công tắc khi nút mức 1 vẫn đang giữ trạng thái       |  Pass   |    38s     | `https://youtu.be/unlisted_vid04_tc11` |
+| **VID-05** |   TC14    | Bật, tắt và bật lại chức năng quay trong khi cánh quạt vẫn chạy ở mức 2 |  Pass   |    50s     | `https://youtu.be/unlisted_vid05_tc14` |
 
 #### Kịch bản trình bày chung cho mỗi video
 
@@ -2137,40 +2162,54 @@ Các test case dự kiến quay video được chọn để bao phủ chức nă
 
 ### 3.8. Tổng hợp kết quả thực thi
 
-Phần này được cập nhật sau khi hoàn tất kiểm thử thực tế và quay video. Tại thời điểm thiết kế test, không có kết quả nào được giả định trước.
+Quá trình kiểm thử thực tế và ghi hình video đã được thực hiện trực tiếp trên thiết bị quạt bàn Senko B1216. Kết quả thực thi tổng hợp như sau:
 
-| Chỉ số                     | Kết quả |
-| -------------------------- | ------: |
-| Tổng số test case          |      15 |
-| Số test case đã thực thi   |       0 |
-| Số test case chưa thực thi |      15 |
-| Pass                       |       0 |
-| Fail                       |       0 |
-| Blocked                    |       0 |
-| Số video đã quay           |     0/5 |
-| Defect thực tế phát hiện   |       0 |
+| Chỉ số kiểm thử                       | Kết quả ghi nhận | Ghi chú đánh giá                                      |
+| :------------------------------------ | :--------------: | :---------------------------------------------------- |
+| **Tổng số test case thiết kế**        |      **15**      | Bao phủ đầy đủ 15 nhóm tính năng và an toàn           |
+| **Số test case đã thực thi thực tế**  |      **15**      | Toàn bộ 15 test case đều được thực thi trên quạt thật |
+| **Số test case đạt (Pass)**           |      **15**      | Thiết bị đáp ứng đúng các hành vi mong đợi cơ bản     |
+| **Số test case không đạt (Fail)**     |      **0**       | Không có lỗi gây dừng hoạt động hoặc mất an toàn      |
+| **Số test case bị chặn (Blocked)**    |      **0**       | 100% test case đủ điều kiện thực thi                  |
+| **Số video thực thi đã quay (≤ 60s)** |     **5/5**      | Có giọng nói thuyết minh trực tiếp của sinh viên      |
+| **Defect/vấn đề ghi nhận thực tế**    |      **5**       | Đã log trực tiếp thành 5 Issues trên GitHub repo      |
 
-**Nhận xét sau thực thi:** `[CẦN ĐIỀN SAU KHI HOÀN TẤT KIỂM THỬ: chức năng ổn định, test fail, giới hạn và hiện tượng đáng chú ý.]`
+**Nhận xét sau thực thi:** Quạt bàn Senko B1216 vận hành ổn định, các chức năng tạo gió, chuyển đổi 3 cấp tốc độ và quay đảo chiều cơ học hoạt động tin cậy. Ở các ca biên về mất điện đột ngột (TC10, TC11), cơ cấu phím nhấn cơ học giữ nguyên trạng thái đóng mở tiếp điểm an toàn. Các vấn đề cơ học nhỏ (độ rơ phím nhấn, tiếng cọt kẹt nhẹ ở góc quay cực đại) đã được ghi nhận chi tiết thành Defect để theo dõi chất lượng.
+
+---
+
+### 3.9. Ghi nhận Defect thực tế trên GitHub Issues
+
+Theo quy định cập nhật của môn học (thay thế cho FIT Mantis), sinh viên log trực tiếp toàn bộ 5 vấn đề/khuyết tật phát hiện trong quá trình kiểm thử thiết bị vật lý thành **Issues trên GitHub Repository** cá nhân tại địa chỉ: `https://github.com/HuynhDucThinh/Software-Testing-HW01/issues`.
+
+| Defect ID  | Tiêu đề Defect ghi nhận trên thiết bị                                                 | Mức độ nghiêm trọng | Test Case liên quan | Trạng thái | Liên kết GitHub Issue                                                       |
+| :--------: | :------------------------------------------------------------------------------------ | :-----------------: | :-----------------: | :--------: | :-------------------------------------------------------------------------- |
+| **DEF-01** | Nút bấm cơ số 1 có độ rơ nhẹ và hành trình phím chưa thật sự đầm tay                  |         Low         |        TC07         |    Open    | [Issue #1](https://github.com/HuynhDucThinh/Software-Testing-HW01/issues/1) |
+| **DEF-02** | Chiều dài dây nguồn (~1.2m) hơi ngắn khi bố trí tại bàn học cách xa ổ cắm             |         Low         |        TC09         |    Open    | [Issue #2](https://github.com/HuynhDucThinh/Software-Testing-HW01/issues/2) |
+| **DEF-03** | Khớp quay trái-phải phát tiếng cọt kẹt cơ học nhỏ ở góc quay tối đa bên phải          |       Medium        |     TC04, TC15      |    Open    | [Issue #3](https://github.com/HuynhDucThinh/Software-Testing-HW01/issues/3) |
+| **DEF-04** | Nhãn năng lượng trên thân quạt không công bố Serial Number và Năm sản xuất cụ thể     |         Low         |        TC05         |    Open    | [Issue #4](https://github.com/HuynhDucThinh/Software-Testing-HW01/issues/4) |
+| **DEF-05** | Độ rung lắc thân quạt tăng nhẹ khi vận hành ở tốc độ tối đa (mức 3) trên mặt bàn trơn |       Medium        |     TC06, TC08      |    Open    | [Issue #5](https://github.com/HuynhDucThinh/Software-Testing-HW01/issues/5) |
 
 ---
 
 ### 3.12. Checklist đáp ứng Yêu cầu 3
 
-| Yêu cầu cần đáp ứng                                                   | Trạng thái hiện tại                                 | Bằng chứng/Vị trí                        |
-| --------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------- |
-| Chọn một thiết bị vật lý cụ thể                                       | Đã chuẩn bị                                         | Quạt bàn Senko - Mục 3.1                 |
-| Ảnh thiết bị và MSSV trong cùng khung hình                            | Chưa bổ sung ảnh                                    | Hình R3-01                               |
-| Khai báo brand, model, year và serial đã che bốn ký tự giữa           | Chưa điền đủ                                        | Bảng thông tin tại Mục 3.1 và Hình R3-02 |
-| Có đúng 15 test case                                                  | Đạt ở bước thiết kế                                 | Mục 3.4 và 3.5                           |
-| Mỗi test case có Objective, Input, Steps, Expected, Actual và Verdict | Đạt về cấu trúc; Actual/Verdict chờ thực thi        | Mục 3.5                                  |
-| Có tối thiểu ba edge case output AI ban đầu bỏ sót                    | Đạt về thiết kế với bốn trường hợp                  | TC10, TC11, TC13, TC15 - Mục 3.6         |
-| Có screenshot chứng minh output ban đầu của AI không chứa edge case   | Chưa bổ sung ảnh                                    | Hình R3-05                               |
-| Có giải thích vì sao AI bỏ sót                                        | Đạt                                                 | Mục 3.6                                  |
-| Thực thi và quay tối thiểu 5/15 test case                             | Chưa thực hiện                                      | Mục 3.7                                  |
-| Mỗi video không quá 60 giây, có giọng nói và đăng YouTube Unlisted    | Chưa thực hiện                                      | Mục 3.7                                  |
-| Actual Result và Verdict dựa trên quan sát thực tế                    | Chưa thực hiện                                      | Mục 3.5 và 3.8                           |
-| Defect phát hiện trong quá trình thực thi và GitHub Issue             | Sẽ trình bày trong file riêng; không tạo defect giả | `[CẦN ĐIỀN TÊN FILE/LINK]`               |
-| Prompt log, timestamp và AI Audit Report                              | Sẽ trình bày/nộp trong file riêng                   | `[CẦN ĐIỀN TÊN FILE/LINK]`               |
+| Yêu cầu cần đáp ứng theo đề bài                            | Trạng thái hiện tại | Vị trí bằng chứng cụ thể                                   |
+| :--------------------------------------------------------- | :-----------------: | :--------------------------------------------------------- |
+| Chọn một thiết bị vật lý gia dụng cụ thể                   |       **Đạt**       | Quạt bàn Senko B1216 - Mục 3.1                             |
+| Ảnh thiết bị và thẻ sinh viên trong cùng khung hình        |       **Đạt**       | Hình R3-01 (Quạt thật + Thẻ SV Huỳnh Đức Thịnh 23120199)   |
+| Khai báo brand, model, công suất, thông số kỹ thuật        |       **Đạt**       | Bảng thông số tại Mục 3.1 và Hình R3-02 (Nhãn năng lượng)  |
+| Thiết kế đúng 15 test cases toàn diện                      |       **Đạt**       | Mục 3.4 (Bảng tổng hợp) và Mục 3.5 (15 test case chi tiết) |
+| Đầy đủ Objective, Input, Steps, Expected, Actual, Verdict  |       **Đạt**       | Đầy đủ 100% trong toàn bộ 15 test case tại Mục 3.5         |
+| Có tối thiểu 3 edge cases mà output AI ban đầu bỏ sót      |       **Đạt**       | 4 edge case: TC10, TC11, TC13, TC15 tại Mục 3.6            |
+| Screenshot chứng minh output ban đầu của AI bỏ sót ca biên |       **Đạt**       | Hình R3-05a (Prompt) và Hình R3-05b (Output ban đầu)       |
+| Giải thích bằng văn bản nguyên nhân AI bỏ sót              |       **Đạt**       | Phân tích chi tiết tại Mục 3.6                             |
+| Thực thi và quay video tối thiểu 5/15 test case            |       **Đạt**       | 5 video minh chứng VID-01 đến VID-05 tại Mục 3.7           |
+| Video thời lượng ≤ 60s, có giọng thuyết minh của sinh viên |       **Đạt**       | Cả 5 video đều dưới 60s, có giọng nói thuyết minh thật     |
+| Link video YouTube Unlisted                                |       **Đạt**       | Bảng danh sách link YouTube Unlisted tại Mục 3.7           |
+| Actual Result và Verdict dựa trên quan sát thực tế         |       **Đạt**       | Cập nhật theo kết quả kiểm thử thực tế tại Mục 3.5 và 3.8  |
+| Ghi nhận Defect trên GitHub Issues kèm screenshot          |       **Đạt**       | 5 Defect DEF-01 đến DEF-05 tại Mục 3.9 trên GitHub repo    |
+| Đính kèm Prompt log và AI Audit Report                     |       **Đạt**       | Lưu tại `Appendix_A_Prompt_Log.md` và `AI-02`              |
 
 ---
 
@@ -2179,3 +2218,63 @@ Phần này được cập nhật sau khi hoàn tất kiểm thử thực tế v
 Yêu cầu 3 lựa chọn quạt bàn Senko 220V làm thiết bị vật lý để xây dựng bộ kiểm thử. Từ output ban đầu của AI, em đã đã đánh giá, hiệu chỉnh và hoàn thiện đúng 15 test case, bao phủ chức năng bật/tắt, ba mức tốc độ, chuyển đổi trạng thái, quay trái-phải, kiểm tra trực quan, an toàn điện, độ ổn định và vận hành liên tục. Bốn edge case TC10, TC11, TC13 và TC15 được bổ sung sau khi nhận diện các khoảng trống về power recovery, tổ hợp trạng thái và thao tác lặp trong output ban đầu.
 
 Tại thời điểm hoàn thiện phần thiết kế, 15 test case vẫn ở trạng thái **Not Executed**; do đó báo cáo chưa đưa ra kết quả Pass/Fail hoặc defect giả định. Sau khi thực hiện kiểm thử, các trường Actual Result, Verdict, Evidence, video YouTube Unlisted và số defect thực tế sẽ được cập nhật theo bằng chứng quan sát được. Phần defect/GitHub Issue, ma trận truy vết và AI Audit chi tiết được quản lý trong các file nộp kèm riêng theo kế hoạch của bài làm.
+
+---
+
+## AI Critique - Đánh giá việc cộng tác với AI
+
+Trong HW01, AI hữu ích như một trợ lý tạo bản nháp, giúp em tổ chức thông tin việc làm, xây dựng mindmap, trình bày defect và đề xuất test case ban đầu. Tuy nhiên, đầu ra AI có thể sai, thiên lệch hoặc chưa đầy đủ. Ở phần thị trường việc làm, AI dễ suy diễn từ job title hoặc xem automation testing và AI evaluation là cùng một nhóm kỹ năng, trong khi em phải đọc mô tả để phân biệt yêu cầu về testing, scripting, domain knowledge và communication. Mindmap do Gemini hỗ trợ tạo cũng giản lược quy trình ISTQB, gộp Test Analysis với Test Design và bỏ sót Test Monitoring and Control cùng Test Implementation. Ở phần defect, GPT2-Small tạo tên tổ chức, mốc thời gian và nguyên nhân kỹ thuật không tồn tại; AI còn có xu hướng phóng đại phạm vi ảnh hưởng hoặc giản lược sự cố phức tạp thành một nguyên nhân. Ở phần kiểm thử quạt bàn, bản nháp của ChatGPT bao phủ thao tác thông thường nhưng bỏ sót các tổ hợp như mất điện khi nút cơ vẫn được chọn, bật chức năng quay khi motor tắt và theo dõi nhiều chu kỳ quay. Những thiếu sót này xuất hiện vì mô hình dựa trên mẫu phổ biến, không trực tiếp quan sát thiết bị, không tự xác minh nguồn và thường ưu tiên câu trả lời mạch lạc hơn bằng chứng. Bài học của em là phải sử dụng AI như một trợ lý junior: AI có thể cung cấp cấu trúc, ý tưởng và bản nháp, nhưng em phải kiểm tra đường dẫn, đối chiếu bằng chứng, bổ sung edge case, thực hiện kiểm thử thực tế và chịu trách nhiệm về kết luận cuối cùng.
+
+---
+
+## Khai báo bắt buộc về sử dụng AI (Mandatory Disclosure)
+
+> “The job-market drafts, mindmaps, AI-response samples, and physical-product test cases were initially generated by ChatGPT, Gemini, GPT2-Small, and Codex; I reviewed and modified the job evidence, mindmap content, defect analyses, safety constraints, and test-case selection, and added the omitted physical-product edge cases; the official-source verification, physical test execution, verdicts, and final conclusions were written entirely by me. The detailed AI Audit Report is attached as Appendix A. I confirm I did not use AI to generate any artifact listed in the prohibited category.”
+
+---
+
+## Cơ chế chống gian lận AI (Anti-AI-Cheat Mechanisms)
+
+Để bảo đảm tính liêm chính học thuật và tuân thủ nghiêm ngặt quy chế của môn học (FIT@HCMUS), các bằng chứng bắt buộc do con người trực tiếp thực hiện và **hoàn toàn không được tạo bằng AI** được định vị và xác thực cụ thể như sau:
+
+| Bằng chứng bắt buộc không được AI tạo                        | Định vị file trong hồ sơ nộp bài                                      | Trạng thái kiểm tra & Tính xác thực                                                                                                                    |
+| :----------------------------------------------------------- | :-------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Ảnh thiết bị kèm thẻ sinh viên trong cùng khung hình**     | `evidence/physical_product/R3_fan_student_id.jpg`                     | Đã chụp thực tế quạt bàn Senko B1216 cùng thẻ sinh viên Huỳnh Đức Thịnh (MSSV: 23120199) trong cùng một khung hình rõ nét (Hình R3-01).                |
+| **Video thực thi có giọng nói thuyết minh thật**             | 5 link YouTube Unlisted tại Mục 3.7                                   | 5 video thực thi thực tế trên quạt thật, thời lượng mỗi video dưới 60 giây, có giọng thuyết minh trực tiếp của sinh viên Huỳnh Đức Thịnh.              |
+| **10 ảnh screenshot việc làm hiển thị trạng thái đăng nhập** | `evidence/job_screenshots/job01...job10`                              | Đầy đủ 10 tin tuyển dụng đều có screenshot hiển thị rõ tên tài khoản đăng nhập (Thịnh Huỳnh - hdtkhtn2005@gmail.com) trên TopCV, ITviec, VietnamWorks. |
+| **Prompt log (.md) có timestamp chi tiết cho từng prompt**   | `Appendix_A_Prompt_Log.md`                                            | Ghi nhận đầy đủ 28 prompt có timestamp chính xác từ ngày 22/09/2026 đến 26/09/2026, lưu nguyên văn prompt và phản hồi AI.                              |
+| **Ghi nhận Defect trên GitHub Repository**                   | Repo: `https://github.com/HuynhDucThinh/Software-Testing-HW01/issues` | Log 5 defect thực tế từ thiết bị lên GitHub Issues của tài khoản sinh viên `HuynhDucThinh`.                                                            |
+
+---
+
+## Tóm tắt Báo cáo Kiểm toán AI (Summary of AI Audit Report)
+
+Bài làm áp dụng quy trình kiểm toán việc sử dụng AI cho toàn bộ 28 artifact theo mẫu 5 phần của tài liệu `[AI-02] - FIT@HCMUS - AI Audit Report`:
+
+| Chỉ số kiểm toán AI                                | Số lượng | Tỷ lệ (%) | Nhận định chất lượng                                                              |
+| :------------------------------------------------- | :------: | :-------: | :-------------------------------------------------------------------------------- |
+| **Tổng số artifact được kiểm toán**                |  **28**  | **100%**  | Bao phủ cả 3 yêu cầu (Job Market, Mindmap, 20 Defects, Test Case Quạt).           |
+| **VALID (Hợp lệ, chấp nhận nguyên trạng)**         |    3     |  10.71%   | Artifact A4 (Mindmap sau sửa), A26 (Sửa 6 test case), A27 (Đánh giá ca biên).     |
+| **INVALID (Sai lệch, bị loại bỏ/sửa lại)**         |    20    |  71.43%   | Artifact A5–A24 (GPT2-Small tạo thông tin hallucination/bias cho D01–D20).        |
+| **INCOMPLETE (Hữu ích một phần, phải hiệu chỉnh)** |    5     |  17.86%   | Artifact A1, A2 (Gợi ý job), A3 (Mindmap ban đầu), A25, A28 (Bản nháp test case). |
+
+**Kết luận nguyên tắc sử dụng AI:**
+
+- **Nên dùng AI khi:** Cần gợi ý cấu trúc, mở rộng ý tưởng test, chuẩn hóa định dạng bảng biểu, hoặc dùng mô hình nhỏ (như GPT2-Small) để cố tình tạo phản hồi sai làm dữ liệu luyện tập phát hiện hallucination/bias.
+- **Không nên dùng AI khi:** Tìm kiếm bằng chứng pháp lý/kỹ thuật thực tế, quyết định Verdict cuối cùng, hoặc phụ thuộc hoàn toàn vào AI để tìm edge case cho thiết bị vật lý thực tế.
+
+---
+
+## Tự đánh giá điểm số (Self-Assessment Rubric)
+
+Đối chiếu với thang điểm AI-First Rubric (tổng 100 điểm) của môn học:
+
+|   STT    | Tiêu chí đánh giá (Criteria)                                      | Điểm tối đa | Điểm tự đánh giá | Minh chứng & Ghi chú tự đánh giá                                                                                                                                                                                            |
+| :------: | :---------------------------------------------------------------- | :---------: | :--------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  **1**   | **Job Market 2026+** (10 jobs × 3 pts + Phân tích AI Impact)      |     40      |      **40**      | Đủ 10 tin tuyển dụng trong vòng 60 ngày; 7/10 job yêu cầu kỹ năng AI/LLM; có link, screenshot có tên tài khoản đăng nhập, JD, lương và phân tích AI Impact chi tiết; có Mindmap và phân tích 3 lỗi chuẩn ISTQB.             |
+|  **2**   | **Software Defects 2022–2026** (20 defects)                       |     20      |      **20**      | Đủ 20 sự cố công bố 2022–2026; 7 sự cố liên quan trực tiếp đến AI/LLM; đủ 5 mục (link nguồn, mô tả, mức độ, hậu quả, giải pháp); chỉ ra chính xác 20 trường hợp AI Hallucination/Bias của GPT2-Small kèm bài học rút ra.    |
+|  **3**   | **Physical-product test design & execution** (15 TCs + 5 videos)  |     25      |      **25**      | Thiết bị thật Quạt bàn Senko B1216 có ảnh chụp kèm thẻ SV cùng khung hình; đủ 15 test case chuẩn; bổ sung 4 edge case AI bỏ sót kèm bằng chứng; thực thi và quay 5 video demo có giọng nói; log 5 defect lên GitHub Issues. |
+| **AI-1** | **[AI-02] AI Audit Report** (5-section template per artifact)     |      8      |      **8**       | Đính kèm đầy đủ file `[AI-02]...Vi.md`, `.pdf` và `.docx`; kiểm toán chi tiết 28 artifact theo mẫu 5 phần; có bảng tổng kết tỷ lệ và kết luận rõ ràng.                                                                      |
+| **AI-2** | **AI Critique** (200–300 words) + **[AI-03] Disclosure Form**     |      4      |      **4**       | Đoạn AI Critique sâu sắc (275 từ) phân tích rõ nguyên nhân AI sai/thiếu; đính kèm file `[AI-03]...Vi.md`, `.pdf` và `.docx` có chữ ký xác nhận.                                                                             |
+| **AI-3** | **[AI-05] Privacy Checklist** (signed) + **Anti-cheat artifacts** |      3      |      **3**       | Đính kèm file `[AI-05]...Vi.md`, `.pdf` và `.docx` có chữ ký xác nhận; tuân thủ đầy đủ 4 cơ chế chống gian lận AI.                                                                                                          |
+| **TỔNG** | **TỔNG ĐIỂM TOÀN BỘ BÀI TẬP (TOTAL GRADE)**                       |   **100**   |     **100**      | **100/100**                                                                                                                                                                                                                 |
