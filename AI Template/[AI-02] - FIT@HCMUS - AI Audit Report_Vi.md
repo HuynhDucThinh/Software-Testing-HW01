@@ -131,7 +131,7 @@ Em không sử dụng trực tiếp năm job AI đề xuất và không kiểm t
 
 Gemini tạo ảnh mindmap với bốn nhánh QA Roles, QC Roles, AI-Augmented Testing và ISTQB Process.
 
-![A3 - Mindmap ban đầu do Gemini tạo](evidence/ai_screenshots/A03_Gemini_Initial_Mindmap.png)
+![A3 - Mindmap ban đầu do Gemini tạo](../evidence/ai_screenshots/A03_Gemini_Initial_Mindmap.png)
 
 #### 3. Verdict
 
@@ -159,7 +159,7 @@ Em tự đọc ISTQB CTFL v4.0.1, xác định và giải thích ba lỗi trong 
 
 Gemini tạo phiên bản mindmap đã hiệu chỉnh:
 
-![A4 - Mindmap sau khi hiệu chỉnh](QA_QC_Role_Mindmap.png)
+![A4 - Mindmap sau khi hiệu chỉnh](../QA_QC_Role_Mindmap.png)
 
 #### 3. Verdict
 
@@ -189,7 +189,7 @@ Em không chỉnh pixel hoặc tự thay nội dung ảnh sau khi Gemini tạo. 
 
 > “The 19-page ruling by the Court of Appeal has established that ChatGPT was a false information and used false information to gain control of the ChatGPT network.”
 
-![A5 - Output GPT2-Small cho D01](evidence/ai_screenshots/D01_GPT2_Output_Annotated.png)
+![A5 - Output GPT2-Small cho D01](../evidence/ai_screenshots/D01_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -219,7 +219,7 @@ Em đọc quyết định gốc và sửa lại: ChatGPT tạo án lệ/trích d
 
 > “In 2024, the Moffatt-Viacom Inc., the Canadian TV operator that is majority owned by the National Public Security Company, was found to have violated the Federal Election Law...”
 
-![A6 - Output GPT2-Small cho D02](evidence/ai_screenshots/D02_GPT2_Output_Annotated.png)
+![A6 - Output GPT2-Small cho D02](../evidence/ai_screenshots/D02_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -249,7 +249,7 @@ Em sửa lại rằng chatbot cung cấp sai chính sách bereavement fare; trib
 
 > “The Gemini project was launched in 2011 and was launched at the end of 2015.”
 
-![A7 - Output GPT2-Small cho D03](evidence/ai_screenshots/D03_GPT2_Output_Annotated.png)
+![A7 - Output GPT2-Small cho D03](../evidence/ai_screenshots/D03_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -279,7 +279,7 @@ Em sửa lại: diversity tuning không xét đúng bối cảnh và model trở
 
 > “A fake car will not show up until the car is turned on, causing the car to turn the other way, potentially leading to a crash.”
 
-![A8 - Output GPT2-Small cho D04](evidence/ai_screenshots/D04_GPT2_Output_Annotated.png)
+![A8 - Output GPT2-Small cho D04](../evidence/ai_screenshots/D04_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -309,7 +309,7 @@ Em xác định người dùng dùng direct prompt injection để chatbot chấ
 
 > “One of the employees I spoke to was anonymous, and this person had submitted a document that was not included in the application.”
 
-![A9 - Output GPT2-Small cho D05](evidence/ai_screenshots/D05_GPT2_Output_Annotated.png)
+![A9 - Output GPT2-Small cho D05](../evidence/ai_screenshots/D05_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -339,7 +339,7 @@ Em ghi lại đúng phạm vi nguồn: nhân viên Samsung đã nhập source co
 
 > “The vulnerability was discovered by the OpenAI-generated model, which uses a technique called an algorithmization...”
 
-![A10 - Output GPT2-Small cho D06](evidence/ai_screenshots/D06_GPT2_Output_Annotated.png)
+![A10 - Output GPT2-Small cho D06](../evidence/ai_screenshots/D06_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -369,7 +369,7 @@ Em mô tả đúng rằng request bị hủy sai thời điểm có thể để 
 
 > “These emotions include distress, anger, disgust, anger, or a variety of other emotion.”
 
-![A11 - Output GPT2-Small cho D07](evidence/ai_screenshots/D07_GPT2_Output_Annotated.png)
+![A11 - Output GPT2-Small cho D07](../evidence/ai_screenshots/D07_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -399,7 +399,7 @@ Em loại bỏ cách nhân hóa và ghi đúng giới hạn quản lý context/t
 
 > “The event was sparked by a cyber attack on the Dnipropetrovsk-Vostok bridge...”
 
-![A12 - Output GPT2-Small cho D08](evidence/ai_screenshots/D08_GPT2_Output_Annotated.png)
+![A12 - Output GPT2-Small cho D08](../evidence/ai_screenshots/D08_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -429,7 +429,7 @@ Em sửa nguyên nhân thành bản cập nhật ngày 19/07/2024 kích hoạt l
 
 > “XZ Utils, an anti-malware and antivirus software that is widely used in the United States, was discovered on March 11, 2024 on an infected computer.”
 
-![A13 - Output GPT2-Small cho D09](evidence/ai_screenshots/D09_GPT2_Output_Annotated.png)
+![A13 - Output GPT2-Small cho D09](../evidence/ai_screenshots/D09_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -459,7 +459,7 @@ Em sửa lại: XZ Utils là bộ công cụ nén dữ liệu; mã độc đư�
 
 > “The vulnerabilities... were identified in a security update released on March 19, 2023 by the International Civilian Security Agency (ICator).”
 
-![A14 - Output GPT2-Small cho D10](evidence/ai_screenshots/D10_GPT2_Output_Annotated.png)
+![A14 - Output GPT2-Small cho D10](../evidence/ai_screenshots/D10_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -489,7 +489,7 @@ Em ghi đúng rằng attacker chưa xác thực có thể truy cập database; C
 
 > “The attackers... were trying to gain access to sensitive and sensitive data like web traffic, sensitive websites, and sensitive websites.”
 
-![A15 - Output GPT2-Small cho D11](evidence/ai_screenshots/D11_GPT2_Output_Annotated.png)
+![A15 - Output GPT2-Small cho D11](../evidence/ai_screenshots/D11_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -519,7 +519,7 @@ Em sửa lại: attacker chưa xác thực có thể tạo local account privile
 
 > “Instead, the issue is the lack of accountability and responsibility of IT employees and suppliers.”
 
-![A16 - Output GPT2-Small cho D12](evidence/ai_screenshots/D12_GPT2_Output_Annotated.png)
+![A16 - Output GPT2-Small cho D12](../evidence/ai_screenshots/D12_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -549,7 +549,7 @@ Em trình bày đây là thất bại kết hợp giữa thiết kế kỹ thu�
 
 > “In a letter to the US Information Technology Policy Office (ITPC), a former IT contractor is accused of attempting to influence public cloud platforms like Microsoft Azure or Google Cloud.”
 
-![A17 - Output GPT2-Small cho D13](evidence/ai_screenshots/D13_GPT2_Output_Annotated.png)
+![A17 - Output GPT2-Small cho D13](../evidence/ai_screenshots/D13_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -579,7 +579,7 @@ Em sửa lại cơ chế WAN router tính lại reachability/BGP prefix, phạm 
 
 > “The issue is thought to be related to a software bug in the Apache web framework.”
 
-![A18 - Output GPT2-Small cho D14](evidence/ai_screenshots/D14_GPT2_Output_Annotated.png)
+![A18 - Output GPT2-Small cho D14](../evidence/ai_screenshots/D14_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -609,7 +609,7 @@ Em ghi đúng rằng GitHub rollback thay đổi, khôi phục sau 36 phút và 
 
 > “After attempting to update the database, the company found a breach of service rules and an unauthorized access to the database.”
 
-![A19 - Output GPT2-Small cho D15](evidence/ai_screenshots/D15_GPT2_Output_Annotated.png)
+![A19 - Output GPT2-Small cho D15](../evidence/ai_screenshots/D15_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -639,7 +639,7 @@ Em sửa nguyên nhân và nêu đúng việc `NOT NULL` không chặn empty str
 
 > “In the end, the engineers finally agreed that they were right. No one was immune to the attack, and no one was out of the loop.”
 
-![A20 - Output GPT2-Small cho D16](evidence/ai_screenshots/D16_GPT2_Output_Annotated.png)
+![A20 - Output GPT2-Small cho D16](../evidence/ai_screenshots/D16_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -669,7 +669,7 @@ Em ghi đúng rằng thay đổi permission của ClickHouse làm query trả ro
 
 > “Yes, the Autopilot safety issue in December of 2021 and 2021... led to the Autopilot Safety Monitoring System (ATMS) being used...”
 
-![A21 - Output GPT2-Small cho D17](evidence/ai_screenshots/D17_GPT2_Output_Annotated.png)
+![A21 - Output GPT2-Small cho D17](../evidence/ai_screenshots/D17_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -699,7 +699,7 @@ Em ghi cân bằng trách nhiệm: người lái phải giám sát hệ thống 
 
 > “Honda Honda Acura, or Acura CR2... was rated by many experts as the most dangerous brand to live by.”
 
-![A22 - Output GPT2-Small cho D18](evidence/ai_screenshots/D18_GPT2_Output_Annotated.png)
+![A22 - Output GPT2-Small cho D18](../evidence/ai_screenshots/D18_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -729,7 +729,7 @@ Em giới hạn kết luận đúng phạm vi 65.135 xe và biện pháp đại 
 
 > “This is sometimes referred to as the ‘digital bootleg problem’.”
 
-![A23 - Output GPT2-Small cho D19](evidence/ai_screenshots/D19_GPT2_Output_Annotated.png)
+![A23 - Output GPT2-Small cho D19](../evidence/ai_screenshots/D19_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -759,7 +759,7 @@ Em ghi đúng phạm vi khoảng 627.758 xe, nguy cơ mất rearview image khi l
 
 > “In practice, a Toyota and Lexus recall of 25V-595 in 2005 was not noticed until December 20, 2005.”
 
-![A24 - Output GPT2-Small cho D20](evidence/ai_screenshots/D20_GPT2_Output_Annotated.png)
+![A24 - Output GPT2-Small cho D20](../evidence/ai_screenshots/D20_GPT2_Output_Annotated.png)
 
 #### 3. Verdict
 
@@ -787,9 +787,9 @@ Em ghi đúng lỗi startup có thể làm mất speedometer, brake-system warni
 
 AI tạo đủ TC01-TC15, gồm bật/tắt, ba mức gió, chuyển tốc độ, oscillation, xác nhận không điều chỉnh góc, stability, nút nhấn, noise/vibration, dây/phích, restart, power interruption, chạy 30 phút, thao tác nút quay khi motor tắt, state consistency và usability.
 
-![A25 - Prompt tạo test case](evidence/ai_screenshots/R3_test_case_prompt.png)
+![A25 - Prompt tạo test case](../evidence/ai_screenshots/R3_test_case_prompt.png)
 
-![A25 - Một phần output 15 test case ban đầu](evidence/ai_screenshots/R3_initial_ai_output.png)
+![A25 - Một phần output 15 test case ban đầu](../evidence/ai_screenshots/R3_initial_ai_output.png)
 
 Trích nguyên văn điểm cần sửa trong TC11:
 
